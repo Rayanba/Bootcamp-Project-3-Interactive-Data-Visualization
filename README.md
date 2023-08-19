@@ -1,31 +1,75 @@
-# Interactive Data Visualization
+<div dir="rtl">
+
+# تصور البيانات التفاعلي
+---
+
+## المقدمة
+
+يتعلق المشروع بإنشاء لوحة تصور بيانات تفاعلية باستخدام [Dash](https://plotly.com/dash/). باستخدام [Riyadh Villas Aqar](https://www.kaggle.com/datasets/reemamuhammed/riyadh-villas-aqar)، تمكنا من إنشاء لوحة تحكم تفاعلية جيدة جدًا!.
+تحتوي مجموعة البيانات على العديد من الأعمدة، وتحتاج إلى قليل من التنظيف والمعالجة المسبقة، سنتعامل مع ذلك في لحظة.
+
+## أعضاء الفريق والمهام
+
+|  *أنوار المطلق* | *خالد الحميدان* |  *ريان بغدادي*  | المهام
+|:----------------:|:----------------:|:----------------:|:-------:|
+|                  |:white_check_mark:|                  | *EDA* |
+|:white_check_mark:|:white_check_mark:|:white_check_mark:| *Cleaning* |
+|:white_check_mark:|:white_check_mark:|:white_check_mark:| *Data Visualization* |
+|:white_check_mark:|                  |                  | *Dash-Design* |
+|                  |                  |:white_check_mark:| *Dash-HTML* |
+|:white_check_mark:|                  |:white_check_mark:| *Dahs-CSS* |
+|                  |:white_check_mark:|                  | *Dash-Callbacks* |
+|:white_check_mark:|:white_check_mark:|:white_check_mark:| *README File* |
 
 
-## Based on what you’ve learned until now, use NumPy, pandas, matplotlib, seaborn, and Plotly to create a project of your choosing.
 
-This project must at least satisfy the following minimum requirements:
+## المشاكل في مجموعة البيانات:
+اول ملاحظاتنا كانت ان بعض أعمدة البيانات نوعهم عدد عشري فحولناهم الى عدد طبيعي. عامود الاحياء كان يحتوي على مسافات سابقة ولاحقة، قيم خاطئة. عامود لاونج يحتوي على قيم مفقودة. سنتطرق لهذا الموضوع لاحقا.
 
-- Use the following dataset.
-    - https://www.kaggle.com/datasets/reemamuhammed/riyadh-villas-aqar
-- EDA
-    - Apply the essential EDA steps: head, shape, info, describe, and missing values.
-    - Apply the additional EDA steps based on your dataset needs.
-- Data Visualization
-    - Drive meaningful insights (at least 10 different charts).
-    - Apply chart format including:
-    - Choose a specific style for your charts.
-        - Apply one color palette from your choice on all charts.
-        - Use the title, x-y labels, font size, figure size, and legends.
-- Create an interactive dashboard using Plotly.
-- Report your final conclusion and findings in one page (readme markdown file).
-    - Team members and their duties.
-    - Introduction (Problem, objectives).
-    - Dataset Overview and Source.
-    - Describe the final ten insights.
-    
-- The Final presentation will be on Sunday (less than 10 min for each group).
-- Due Date: Sat, 19 Aug, 11:00 pm.
 
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
+## الرؤى:
+1- لاحظنا أن الأسعار والمساحات تختلف بشكل رهيب بين مناطق الرياض 
+حيث أن شمال الرياض يعد الأغلى والأكبر مساحةً وجنوب الرياض أقلها, أما وسط الرياض فالأسعار والمساحات غير منتظمة.
+
+<img src='pic/1.png'>
+<H1></H1>
+
+2- كما أن أكثر مجموعات الفيلل المسجلة في قاعدة البانات هي من جميع المناطق وهذا يؤكد ما ذكرناه مسبقاً.
+
+<img src='pic/2.png'>
+<H1></H1>
+3- كما نلاحظ ان عدد الفلل في حي طويق كبير جدا تقريبا ضعف عدد الفلل في اغلب الاحياء الاخرى. 
+
+<img src='pic/3.png'>
+<H1></H1>
+4- وسط الرياض  
+
+<img src='pic/4.png'>
+<H1></H1>
+5- نلاحظ ان السعر يعتمد بالاغلب على المساحه فقط وكون الفله على اكثر من شارع لا يؤثر. 
+
+<img src='pic/5.png'>
+<H1></H1>
+6- نلاحظ ان غرب الرياض يغلب على الجهات الاخرى في عدد الفلل بينما يتضح قل عدد الفلل في جنوب الرياض.
+
+<img src='pic/6.png'>
+<H1></H1>
+7- يتضح ان الواجهه الشماليه والشرقيه هي الواجهات الاكثر شيوعًا.
+
+<img src='pic/7.png'>
+<H1></H1>
+8- نلاحظ ان شمال ووسط الرياض فيه تفاوت للاسعار كبير بعكس جنوب الرياض.
+كما نلاحظ ايضًا ان شمال الرياض هو الاغلى سعرًا ورغم تفاوت الاسعار الا انها تبدا بمبلغ مرتفع.
+
+<img src='pic/8.png'>
+<H1></H1>
+9- كما سبق وذكرنا ان شمال الرياض هو الاغلى سعرًا و يتضح ايضًا ان الفلل المطروحه في الشمال عددها كبير جدا مقارنًة بباقي الجهات.
+
+<img src='pic/9.png'>
+<H1></H1>
+10- نلاحظ ان عدد المرافق الاكثر شيوعًا في جميع الفلل هو خمسة غرف وخمسة حمامات وخمس غرف معيشة
+
+<img src='pic/10.png'>
+<H1></H1>
+
+</div>
